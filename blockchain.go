@@ -20,6 +20,9 @@ type BlockchainIterator struct {
 	db          *bolt.DB
 }
 
+type Transaction struct {
+}
+
 func (bc *Blockchain) AddBlock(data string) {
 	var lastHash []byte
 
